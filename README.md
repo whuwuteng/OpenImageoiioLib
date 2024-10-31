@@ -41,6 +41,11 @@ The code is very easy to use, here is an example to read :
 	Image.Close();
 ```
 
+## Question
+
+### Install bug
+
+If you have a bug in compiling **/lib/x86_64-linux-gnu/libtiff.so.5 : référence indéfinie vers « libdeflate_free_compressor »**, you can compile the [libdeflate](https://github.com/ebiggers/libdeflate) using CMake.
 
 ## MAINTENANCE
 
