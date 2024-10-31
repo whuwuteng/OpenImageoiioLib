@@ -51,7 +51,16 @@ The code is very easy to use, here is an example to read :
 
 ### Install bug
 
-If you have a bug in compiling **/lib/x86_64-linux-gnu/libtiff.so.5 : référence indéfinie vers « libdeflate_free_compressor »**, you can compile the [libdeflate](https://github.com/ebiggers/libdeflate) using CMake.
+If there is a bug in compiling **/lib/x86_64-linux-gnu/libtiff.so.5 : référence indéfinie vers « libdeflate_free_compressor »**, we can compile the [libdeflate](https://github.com/ebiggers/libdeflate) using CMake.
+
+The code is base on [OpenImageIOV2](https://sites.google.com/site/openimageio/home) , but the latest version is [OpenImageIOV3](https://sites.google.com/site/openimageio/home), so the code can not be compiled.
+
+If there is bug **error while loading shared libraries: libOpenImageIO.so.2.2: cannot open shared object file: No such file or directory**, we can add the [library](https://stackoverflow.com/questions/17889799/libraries-in-usr-local-lib-not-found) to the path :
+
+```  
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
+ldd tool
+```
 
 ## MAINTENANCE
 
