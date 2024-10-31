@@ -13,6 +13,12 @@ An implement based on C++ and [OpenImageIO](https://sites.google.com/site/openim
 
 We can follow the the [instruction](https://github.com/AcademySoftwareFoundation/OpenImageIO/blob/master/INSTALL.md) to install the library.
 
+**News** After Ubuntu 20.04, we can install  [OpenImageIO](https://sites.google.com/site/openimageio/home) easily :
+
+```
+sudo apt install libopenimageio-dev
+```
+
 ## Windows
 
 Actually, this code is more useful in Windows, because after building the dependency libraries,  the include, library, and execution file is more simple(just a few files), we only need to set the include and library directory in VS project.
