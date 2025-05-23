@@ -16,7 +16,12 @@ We can follow the the [instruction](https://github.com/AcademySoftwareFoundation
 **News** After Ubuntu 20.04, we can install  [OpenImageIO](https://sites.google.com/site/openimageio/home) easily :
 
 ```
-sudo apt install libopenimageio-dev
+# need to install the dependence of OpenImageIO
+sudo apt-get install libopenexr-dev
+
+# install OpenImageIO
+sudo apt-get install openimageio-tools
+sudo apt-get install libopenimageio-dev
 ```
 
 ## Windows
